@@ -157,4 +157,66 @@ window.addEventListener('scroll', () => {
     }
     
     lastScroll = currentScroll;
-}); 
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Service card expansion
+    const serviceCards = document.querySelectorAll('.service-card');
+    
+    // Add index to list items for staggered animation
+    serviceCards.forEach(card => {
+        const listItems = card.querySelectorAll('.service-details li');
+        listItems.forEach((item, index) => {
+            item.style.setProperty('--i', index);
+        });
+    });
+
+    // Handle click events
+    serviceCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+            // Don't trigger if clicking on a link inside the card
+            if (e.target.tagName === 'A') {
+                return;
+            }
+
+            const wasActive = this.classList.contains('active');
+            
+            // First remove active class from all cards
+            serviceCards.forEach(otherCard => {
+                if (otherCard !== this && otherCard.classList.contains('active')) {
+                    otherCard.classList.remove('active');
+                }
+            });
+            
+            // Then toggle this card
+            if (!wasActive) {
+                this.classList.add('active');
+                
+                // Scroll card into view if it's not fully visible
+                const rect = this.getBoundingClientRect();
+                const isFullyVisible = (
+                    rect.top >= 0 &&
+                    rect.bottom <= window.innerHeight
+                );
+                
+                if (!isFullyVisible) {
+                    const offset = rect.top + window.scrollY - 100; // 100px from top
+                    window.scrollTo({
+                        top: offset,
+                        behavior: 'smooth'
+                    });
+                }
+            } else {
+                this.classList.remove('active');
+            }
+        });
+        
+        // Keyboard accessibility
+        card.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.click();
+            }
+        });
+    });
+});
