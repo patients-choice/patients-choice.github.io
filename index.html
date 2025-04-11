@@ -3,12 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patient's Choice Home Health Care</title>
+    <title>Patient's Choice Home Health Care | Miami Home Health Services</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" type="image/png" href="images/patients-choice-icon-final-color.png">
-    <link rel="canonical" href="https://www.patientschoicehhc.com/" />
+    <link rel="canonical" href="https://www.patients-choice.com/" />
+    
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Patient's Choice Home Health Care - Professional home health care services in Miami-Dade and Monroe Counties. Medicare-certified, bilingual care, 24/7 support.">
+    <meta name="keywords" content="home health care, healthcare services, nursing care, physical therapy, occupational therapy, speech therapy, home health aide, medical social worker, Miami home health, Medicare home health, bilingual home care">
+    <meta name="language" content="English">
+    <meta name="alternate" hreflang="es" href="https://www.patients-choice.com/es" />
+    <meta name="alternate" hreflang="en" href="https://www.patients-choice.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.patients-choice.com/">
+    <meta property="og:title" content="Patient's Choice Home Health Care | Miami Home Health Services">
+    <meta property="og:description" content="Professional home health care services in Miami-Dade and Monroe Counties. Medicare-certified, bilingual care, 24/7 support.">
+    <meta property="og:image" content="https://www.patients-choice.com/images/patients-choice-logo-final-color.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.patients-choice.com/">
+    <meta property="twitter:title" content="Patient's Choice Home Health Care | Miami Home Health Services">
+    <meta property="twitter:description" content="Professional home health care services in Miami-Dade and Monroe Counties. Medicare-certified, bilingual care, 24/7 support.">
+    <meta property="twitter:image" content="https://www.patients-choice.com/images/patients-choice-logo-final-color.png">
+    
+    <!-- Schema.org markup for Google+ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HomeHealthCare",
+        "name": "Patient's Choice Home Health Care",
+        "description": "Professional home health care services in Miami-Dade and Monroe Counties",
+        "url": "https://www.patients-choice.com",
+        "logo": "https://www.patients-choice.com/images/patients-choice-logo-final-color.png",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "7205 NW 19th Street, Suite 201",
+            "addressLocality": "Miami",
+            "addressRegion": "FL",
+            "postalCode": "33126",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "25.7907",
+            "longitude": "-80.3150"
+        },
+        "openingHours": "Mo-Fr 09:00-17:00",
+        "telephone": "+13052255353",
+        "sameAs": [
+            "https://www.facebook.com/patientschoicehhc",
+            "https://www.linkedin.com/company/patients-choice-home-health-care",
+            "https://www.instagram.com/patientschoicehhc"
+        ],
+        "areaServed": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "25.7907",
+                "longitude": "-80.3150"
+            },
+            "geoRadius": "50000"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Home Health Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Skilled Nursing Care"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Physical Therapy"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Occupational Therapy"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -27,11 +116,15 @@
                 </button>
                 <nav class="nav">
                     <ul>
-                        <li style="--i: 1"><a href="#home">Home</a></li>
-                        <li style="--i: 2"><a href="#services">Services</a></li>
-                        <li style="--i: 3"><a href="#about">About</a></li>
-                        <li style="--i: 4"><a href="#resources">Resources</a></li>
-                        <li style="--i: 5"><a href="#contact">Contact</a></li>
+                        <li style="--i: 1"><a href="#home" data-translation-key="nav.home">Home</a></li>
+                        <li style="--i: 2"><a href="#services" data-translation-key="nav.services">Services</a></li>
+                        <li style="--i: 3"><a href="#about" data-translation-key="nav.about">About</a></li>
+                        <li style="--i: 4"><a href="#resources" data-translation-key="nav.resources">Resources</a></li>
+                        <li style="--i: 5"><a href="#contact" data-translation-key="nav.contact">Contact</a></li>
+                        <li class="language-switcher">
+                            <button class="lang-btn" data-lang="en">EN</button>
+                            <button class="lang-btn" data-lang="es">ES</button>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -44,12 +137,12 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Your Health, <span class="highlight">Our Priority</span></h1>
-                    <p>Patient's Choice Home Health Care is thankful for the opportunity to make a positive difference to your health and your life at home. Whether you're battling a chronic illness, a disability, or facing challenges with daily activities, we will be there. You can count on our team of professionals 24 hours a day 7 days a week to help you through it all.</p>
+                    <h1 data-translation-key="hero.title">Your Health, <span class="highlight">Our Priority</span></h1>
+                    <p data-translation-key="hero.subtitle">Patient's Choice Home Health Care is thankful for the opportunity to make a positive difference to your health and your life at home. Whether you're battling a chronic illness, a disability, or facing challenges with daily activities, we will be there. You can count on our team of professionals 24 hours a day 7 days a week to help you through it all.</p>
 
                     <div class="cta-buttons">
-                        <a href="#contact" class="btn btn-primary">Request Care</a>
-                        <a href="#services" class="btn btn-secondary">Our Services</a>
+                        <a href="#contact" class="btn btn-primary" data-translation-key="hero.requestCare">Request Care</a>
+                        <a href="#services" class="btn btn-secondary" data-translation-key="hero.ourServices">Our Services</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -62,98 +155,127 @@
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <h2>Our Services</h2>
-            <p>We offer a comprehensive range of home health care services tailored to meet your specific needs.</p>
+            <h2 data-translation-key="services.title">Our Services</h2>
+            <p data-translation-key="services.subtitle">Patients Choice offers a wide range of Medicare-certified and insurance-covered home health services, plus private-pay packages for postoperative and cosmetic surgery recovery.</p>
+            
             <div class="services-grid">
                 <div class="service-card" tabindex="0">
+                    <i class="fas fa-syringe"></i>
+                    <h3 data-translation-key="services.diabeticCare">Diabetic Care</h3>
+                    <div class="service-details">
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-translation-key="services.diabeticCare.bullet1">Blood sugar monitoring</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translation-key="services.diabeticCare.bullet2">Medication/insulin administration</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translation-key="services.diabeticCare.bullet3">Diabetic foot care</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translation-key="services.diabeticCare.bullet4">Dietary and lifestyle education</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translation-key="services.diabeticCare.bullet5">Prevention of complications</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card" tabindex="0">
+                    <i class="fas fa-procedures"></i>
+                    <h3 data-translation-key="services.postoperative">Postoperative Recovery</h3>
+                    <div class="service-details">
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-translation-key="services.postoperative.bullet1">Pain and wound management</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translation-key="services.postoperative.bullet2">Mobility assistance</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translation-key="services.postoperative.bullet3">Medication administration</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translation-key="services.postoperative.bullet4">Communication with your surgeon</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translation-key="services.postoperative.bullet5">Hospital-to-home transition planning</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card" tabindex="0">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3 data-translation-key="services.cosmetic">Cosmetic Surgery Recovery</h3>
+                    <div class="service-details">
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-translation-key="services.cosmetic.bullet1">Transportation to/from surgery</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translation-key="services.cosmetic.bullet2">24-hour post-op care</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translation-key="services.cosmetic.bullet3">Lymphatic drainage support</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translation-key="services.cosmetic.bullet4">Dressing changes, drain monitoring</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translation-key="services.cosmetic.bullet5">Private nursing & concierge care</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card" tabindex="0">
                     <i class="fas fa-user-nurse"></i>
-                    <h3>Skilled Nursing</h3>
-                    <p class="service-brief">Professional nursing care in the comfort of your home.</p>
+                    <h3 data-translation-key="services.core">Core Home Health Services</h3>
                     <div class="service-details">
                         <ul>
-                            <li><i class="fas fa-check"></i> Diabetic Care and Teaching</li>
-                            <li><i class="fas fa-check"></i> Respiratory Disorders (COPD)</li>
-                            <li><i class="fas fa-check"></i> IV Therapy</li>
-                            <li><i class="fas fa-check"></i> Rehabilitation Guidance</li>
-                            <li><i class="fas fa-check"></i> Administering Injections</li>
-                            <li><i class="fas fa-check"></i> Pain Relief / Pain Management</li>
-                            <li><i class="fas fa-check"></i> Incontinence Management</li>
-                            <li><i class="fas fa-check"></i> Vital Signs Monitoring</li>
-                            <li><i class="fas fa-check"></i> Catheter Care and Maintenance</li>
-                            <li><i class="fas fa-check"></i> Wound VAC Therapy</li>
-                            <li><i class="fas fa-check"></i> Dressing Changes</li>
+                            <li><i class="fas fa-check"></i> <span data-translation-key="services.core.bullet1">Skilled Nursing: Wound care, IV therapy, injections, disease management</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translation-key="services.core.bullet2">Physical Therapy: Post-surgical rehab, mobility, strength, balance</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translation-key="services.core.bullet3">Occupational Therapy: Activities of daily living, adaptive techniques</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translation-key="services.core.bullet4">Home Health Aides: Bathing, grooming, meals, mobility, light housekeeping</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translation-key="services.core.bullet5">Medical Social Work: Counseling, community resources, care planning</span></li>
                         </ul>
                     </div>
                 </div>
-                <div class="service-card" tabindex="0">
-                    <i class="fas fa-walking"></i>
-                    <h3>Physical Therapy</h3>
-                    <p class="service-brief">Expert therapy to help you regain strength and mobility.</p>
-                    <div class="service-details">
-                        <ul>
-                            <li><i class="fas fa-check"></i> Post-Surgery Rehabilitation</li>
-                            <li><i class="fas fa-check"></i> Strength Training</li>
-                            <li><i class="fas fa-check"></i> Balance Improvement</li>
-                            <li><i class="fas fa-check"></i> Mobility Enhancement</li>
-                            <li><i class="fas fa-check"></i> Pain Management</li>
-                            <li><i class="fas fa-check"></i> Gait Training</li>
-                        </ul>
-                    </div>
+            </div>
+
+            <div class="services-note">
+                <p data-translation-key="services.note">All services are delivered under the supervision of your physician and based on your personalized care plan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insurance Section -->
+    <section id="insurance" class="insurance">
+        <div class="container">
+            <h2 data-translation-key="insurance.title">Insurance</h2>
+            <p data-translation-key="insurance.subtitle">Patients Choice accepts the following plans:</p>
+            
+            <div class="insurance-grid">
+                <div class="insurance-card">
+                    <i class="fas fa-shield-heart"></i>
+                    <h3 data-translation-key="insurance.medicare">Medicare & Medicare Advantage</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Medicare (Original)</li>
+                        <li><i class="fas fa-check"></i> Aetna Medicare Advantage</li>
+                    </ul>
                 </div>
-                <div class="service-card" tabindex="0">
-                    <i class="fas fa-hands-helping"></i>
-                    <h3>Occupational Therapy</h3>
-                    <p class="service-brief">Assistance in regaining independence in daily activities.</p>
-                    <div class="service-details">
-                        <ul>
-                            <li><i class="fas fa-check"></i> Daily Living Activities Training</li>
-                            <li><i class="fas fa-check"></i> Home Safety Assessment</li>
-                            <li><i class="fas fa-check"></i> Adaptive Equipment Training</li>
-                            <li><i class="fas fa-check"></i> Fine Motor Skills Development</li>
-                            <li><i class="fas fa-check"></i> Energy Conservation Techniques</li>
-                        </ul>
-                    </div>
+
+                <div class="insurance-card">
+                    <i class="fas fa-hospital-user"></i>
+                    <h3 data-translation-key="insurance.private">Private Insurance</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> UnitedHealthcare</li>
+                        <li><i class="fas fa-check"></i> Blue Cross Blue Shield (BCBS)</li>
+                        <li><i class="fas fa-check"></i> Optum VA</li>
+                    </ul>
                 </div>
-                <div class="service-card" tabindex="0">
-                    <i class="fas fa-comments"></i>
-                    <h3>Speech Therapy</h3>
-                    <p class="service-brief">Professional therapy for communication and swallowing disorders.</p>
-                    <div class="service-details">
-                        <ul>
-                            <li><i class="fas fa-check"></i> Speech and Language Rehabilitation</li>
-                            <li><i class="fas fa-check"></i> Swallowing Therapy</li>
-                            <li><i class="fas fa-check"></i> Voice Disorders Treatment</li>
-                            <li><i class="fas fa-check"></i> Cognitive Communication</li>
-                        </ul>
-                    </div>
+
+                <div class="insurance-card">
+                    <i class="fas fa-user-shield"></i>
+                    <h3 data-translation-key="insurance.military">Military & Government</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Tricare (Military Health)</li>
+                        <li><i class="fas fa-check"></i> Florida Community Care</li>
+                    </ul>
                 </div>
-                <div class="service-card" tabindex="0">
-                    <i class="fas fa-hand-holding-heart"></i>
-                    <h3>Home Health Aide</h3>
-                    <p class="service-brief">Compassionate personal care and assistance with daily activities.</p>
-                    <div class="service-details">
-                        <ul>
-                            <li><i class="fas fa-check"></i> Personal Hygiene Assistance</li>
-                            <li><i class="fas fa-check"></i> Medication Reminders</li>
-                            <li><i class="fas fa-check"></i> Light Housekeeping</li>
-                            <li><i class="fas fa-check"></i> Meal Preparation</li>
-                            <li><i class="fas fa-check"></i> Companionship</li>
-                        </ul>
-                    </div>
+
+                <div class="insurance-card">
+                    <i class="fas fa-hand-holding-medical"></i>
+                    <h3 data-translation-key="insurance.managed">Managed Care</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Sunshine Health</li>
+                        <li><i class="fas fa-check"></i> Simply Healthcare</li>
+                        <li><i class="fas fa-check"></i> Molina Healthcare</li>
+                    </ul>
                 </div>
-                <div class="service-card" tabindex="0">
-                    <i class="fas fa-user-friends"></i>
-                    <h3>Medical Social Worker</h3>
-                    <p class="service-brief">Support in navigating healthcare and community resources.</p>
-                    <div class="service-details">
-                        <ul>
-                            <li><i class="fas fa-check"></i> Resource Coordination</li>
-                            <li><i class="fas fa-check"></i> Care Planning</li>
-                            <li><i class="fas fa-check"></i> Family Support</li>
-                            <li><i class="fas fa-check"></i> Community Service Connection</li>
-                            <li><i class="fas fa-check"></i> Healthcare Navigation</li>
-                        </ul>
-                    </div>
+            </div>
+
+            <div class="insurance-note">
+                <div class="private-pay">
+                    <h3 data-translation-key="insurance.privatePay">Private Pay Options</h3>
+                    <p data-translation-key="insurance.privatePayDesc">We offer flexible plans for those not covered by insurance, including postoperative and cosmetic surgery packages.</p>
+                </div>
+                <div class="insurance-support">
+                    <h3 data-translation-key="insurance.support">Insurance Support</h3>
+                    <p data-translation-key="insurance.supportDesc">Our staff will verify your benefits, explain any costs upfront, and guide you every step of the way.</p>
                 </div>
             </div>
         </div>
@@ -162,55 +284,40 @@
     <!-- About Us -->
     <section id="about" class="about">
         <div class="container">
-            <h2>About Us</h2>
+            <h2 data-translation-key="about.title">About Us</h2>
             
             <!-- Mission Statement -->
             <div class="about-section mission-section">
-                <h3>Mission Statement at Patient's Choice Home Health Care</h3>
-                <ul class="mission-list">
-                    <li>
-                        <i class="fas fa-check-circle"></i>
-                        <p>To provide the most compassionate professional home health care in the least intrusive manner</p>
-                    </li>
-                    <li>
-                        <i class="fas fa-check-circle"></i>
-                        <p>To assist our patients with all of their home bound needs while giving nothing less than Loyalty, Trust, Compassion and Respect.</p>
-                    </li>
-                </ul>
+                <h3 data-translation-key="about.mission">Locally Trusted. Family-Focused. Clinically Strong.</h3>
+                <p data-translation-key="about.missionDesc">Patients Choice Home Health Agency was founded with a simple mission to provide high-quality, compassionate health care to individuals in the comfort of their homes.</p>
             </div>
 
             <div class="about-content">
                 <div class="about-text">
                     <!-- Our History -->
                     <div class="about-section">
-                        <h3>Our History</h3>
-                        <p>Patient's Choice Home Health Care was created based on the patient's and family's point of view of what quality health care should be. We tailor our services according to the specific needs of each client – this makes individualized care more effective, convenient and less costly.</p>
-                        <p>Our company was founded in 2005 by a team of specialists with more than 30 years of health care experience combined.</p>
-                    </div>
-
-                    <!-- Our Commitment -->
-                    <div class="about-section">
-                        <h3>Our Commitment</h3>
-                        <p>At Patient's Choice Home Health Care, we highly emphasize efficient communication between the patient, the clinicians and physicians involved. We continually self-evaluate the quality of care provided and will look for ways to improve. It is our greatest commitment to educate patients on proper self-management of disease processes and ensuring safety at home.</p>
+                        <h3 data-translation-key="about.community">Our Community</h3>
+                        <p data-translation-key="about.communityDesc">As a locally owned and operated agency, we understand the unique needs of our community. We serve patients across Miami-Dade and Monroe Counties, from urban centers to coastal communities.</p>
                     </div>
 
                     <!-- Our Team -->
                     <div class="about-section">
-                        <h3>Our Team</h3>
-                        <p>Patient's Choice Home Health Care is committed to reinforcing its staff's clinical knowledge and keeping them informed on best practices. We provide the most current home health care training and education to all of our staff members. Proper procedures are always in place for the coordination of patient care to meet specific needs, conditions and settings for our patients.</p>
-                        <p>To preserve the quality of our home health care programs, we employ the most qualified and compassionate professionals. We comply with all State and Federal Licensing Requirements. We make certain, that prior to initial patient care, our staff is cleared by background and license screenings. Patient safety and confidentiality is of utmost importance at Patient's Choice Home Health Care.</p>
+                        <h3 data-translation-key="about.team">Our Team</h3>
+                        <p data-translation-key="about.teamDesc">We are proud to be a Medicare-certified and AHCA-licensed home health agency. Our team includes:</p>
+                        <ul class="team-list">
+                            <li><i class="fas fa-check-circle"></i> <span data-translation-key="about.team.bullet1">Registered Nurses (RNs)</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-translation-key="about.team.bullet2">Licensed Practical Nurses (LPNs)</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-translation-key="about.team.bullet3">Physical & Occupational Therapists</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-translation-key="about.team.bullet4">Home Health Aides (HHAs & CNAs)</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-translation-key="about.team.bullet5">Medical Social Workers</span></li>
+                        </ul>
+                        <p data-translation-key="about.teamList">Each member of our staff is carefully screened, trained, and supervised to ensure our patients receive only the most reliable and compassionate care.</p>
                     </div>
 
-                    <!-- Non-Discrimination Policy -->
+                    <!-- Our Philosophy -->
                     <div class="about-section">
-                        <h3>Non-Discrimination Policy</h3>
-                        <p>Patient's Choice Home Health Care promotes equality in providing services and employment. In observation of Title VI of the Civil Rights Act of 1964, the Age Discrimination Act of 1975 and Section 504 of the Rehabilitation Act of 1973, the company ensures that all eligible clients shall receive services due without unlawful discrimination against age, gender, color, religion, national origin, disability, race, sexual orientation or ancestry.</p>
-                    </div>
-
-                    <!-- Professional Standards -->
-                    <div class="about-section">
-                        <h3>Professional Standards</h3>
-                        <p>Our professionals at Patient's Choice Home Health Care are governed under the State and Federal Licenses to provide the highest quality of services to our patients and their families based on company policies and procedures.</p>
+                        <h3 data-translation-key="about.philosophy">Our Philosophy</h3>
+                        <p data-translation-key="about.philosophyDesc">We treat every patient as family. We listen carefully, communicate clearly, and personalize every service around the goals of the patient and their family.</p>
                     </div>
                 </div>
                 
@@ -232,80 +339,80 @@
     <!-- Resources Section -->
     <section id="resources" class="resources">
         <div class="container">
-            <h2>Resources</h2>
-            <p>Access these valuable healthcare resources and information to help you make informed decisions about your health.</p>
+            <h2 data-translation-key="resources.title">Resources</h2>
+            <p data-translation-key="resources.subtitle">Access these valuable healthcare resources and information to help you make informed decisions about your health.</p>
             
             <div class="resources-grid">
                 <a href="http://www.hhs.gov/" class="resource-card" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-hospital-user"></i>
-                    <h3>U.S. Department of Health & Human Services</h3>
-                    <p>Federal department overseeing health and human services programs.</p>
+                    <h3 data-translation-key="resources.hhs.title">U.S. Department of Health & Human Services</h3>
+                    <p data-translation-key="resources.hhs.desc">Federal department overseeing health and human services programs.</p>
                 </a>
 
                 <a href="http://www.medicare.gov/" class="resource-card" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-heart-pulse"></i>
-                    <h3>Medicare</h3>
-                    <p>Official Medicare website for healthcare coverage information and enrollment.</p>
+                    <h3 data-translation-key="resources.medicare.title">Medicare</h3>
+                    <p data-translation-key="resources.medicare.desc">Official Medicare website for healthcare coverage information and enrollment.</p>
                 </a>
 
                 <a href="http://www.cms.gov/" class="resource-card" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-hand-holding-medical"></i>
-                    <h3>Centers for Medicare & Medicaid Services</h3>
-                    <p>Federal agency administering Medicare, Medicaid, and other health programs.</p>
+                    <h3 data-translation-key="resources.cms.title">Centers for Medicare & Medicaid Services</h3>
+                    <p data-translation-key="resources.cms.desc">Federal agency administering Medicare, Medicaid, and other health programs.</p>
                 </a>
 
                 <a href="http://www.ncd.gov/" class="resource-card" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-universal-access"></i>
-                    <h3>National Council on Disability</h3>
-                    <p>Independent federal agency advising on disability policy.</p>
+                    <h3 data-translation-key="resources.ncd.title">National Council on Disability</h3>
+                    <p data-translation-key="resources.ncd.desc">Independent federal agency advising on disability policy.</p>
                 </a>
 
                 <a href="http://www.familiesusa.org/" class="resource-card" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-users"></i>
-                    <h3>FamiliesUSA</h3>
-                    <p>National nonprofit organization advocating for high-quality healthcare.</p>
+                    <h3 data-translation-key="resources.familiesUSA.title">FamiliesUSA</h3>
+                    <p data-translation-key="resources.familiesUSA.desc">National nonprofit organization advocating for high-quality healthcare.</p>
                 </a>
 
                 <a href="http://www.ahcancal.org/" class="resource-card" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-house-medical"></i>
-                    <h3>American Health Care Association</h3>
-                    <p>National organization representing long-term and post-acute care providers.</p>
+                    <h3 data-translation-key="resources.ahcancal.title">American Health Care Association</h3>
+                    <p data-translation-key="resources.ahcancal.desc">National organization representing long-term and post-acute care providers.</p>
                 </a>
 
                 <a href="http://www.ama-assn.org/" class="resource-card" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-stethoscope"></i>
-                    <h3>American Medical Association</h3>
-                    <p>Largest association of physicians and medical students in the United States.</p>
+                    <h3 data-translation-key="resources.ama.title">American Medical Association</h3>
+                    <p data-translation-key="resources.ama.desc">Largest association of physicians and medical students in the United States.</p>
                 </a>
 
                 <a href="http://www.alz.org/index.asp/" class="resource-card" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-brain"></i>
-                    <h3>Alzheimer's Association</h3>
-                    <p>Leading voluntary health organization in Alzheimer's care and research.</p>
+                    <h3 data-translation-key="resources.alz.title">Alzheimer's Association</h3>
+                    <p data-translation-key="resources.alz.desc">Leading voluntary health organization in Alzheimer's care and research.</p>
                 </a>
 
                 <a href="http://www.everydayhealth.com/" class="resource-card" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-notes-medical"></i>
-                    <h3>Everyday Health</h3>
-                    <p>Comprehensive online health information and resources.</p>
+                    <h3 data-translation-key="resources.everydayHealth.title">Everyday Health</h3>
+                    <p data-translation-key="resources.everydayHealth.desc">Comprehensive online health information and resources.</p>
                 </a>
 
                 <a href="http://www.medicinenet.com/" class="resource-card" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-user-md"></i>
-                    <h3>MedicineNet</h3>
-                    <p>Health and medical information produced by doctors.</p>
+                    <h3 data-translation-key="resources.medicineNet.title">MedicineNet</h3>
+                    <p data-translation-key="resources.medicineNet.desc">Health and medical information produced by doctors.</p>
                 </a>
 
                 <a href="http://www.vitalehealthlaw.com/" class="resource-card" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-scale-balanced"></i>
-                    <h3>The Health Law Offices</h3>
-                    <p>Legal resources and information for healthcare-related matters.</p>
+                    <h3 data-translation-key="resources.healthLaw.title">The Health Law Offices</h3>
+                    <p data-translation-key="resources.healthLaw.desc">Legal resources and information for healthcare-related matters.</p>
                 </a>
 
                 <a href="http://www.floridahealthindustry.com/" class="resource-card" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-sun"></i>
-                    <h3>Florida Health Industry</h3>
-                    <p>Information about Florida's healthcare industry and services.</p>
+                    <h3 data-translation-key="resources.floridaHealth.title">Florida Health Industry</h3>
+                    <p data-translation-key="resources.floridaHealth.desc">Information about Florida's healthcare industry and services.</p>
                 </a>
             </div>
         </div>
@@ -314,30 +421,30 @@
     <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us to learn more about our services or to schedule a consultation.</p>
+            <h2 data-translation-key="contact.title">Contact Us</h2>
+            <p data-translation-key="contact.subtitle">Get in touch with us to learn more about our services or to schedule a consultation.</p>
             <div class="contact-content">
                 <div class="contact-form">
                     <form id="contactForm" action="https://formspree.io/f/xdkepqza" method="POST">
-                        <div class="form-success">
+                        <div class="form-success" data-translation-key="contact.success">
                             <i class="fas fa-check-circle"></i> Thank you for your message! We will get back to you soon.
                         </div>
                         <div class="form-group">
-                            <label for="name">Full Name</label>
+                            <label for="name" data-translation-key="contact.name">Full Name</label>
                             <input type="text" id="name" name="name" placeholder="Enter your full name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email Address</label>
+                            <label for="email" data-translation-key="contact.email">Email Address</label>
                             <input type="email" id="email" name="email" placeholder="Enter your email address" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Phone Number</label>
+                            <label for="phone" data-translation-key="contact.phone">Phone Number</label>
                             <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
                         </div>
                         <div class="form-group">
-                            <label for="service">Service Interest</label>
+                            <label for="service" data-translation-key="contact.service">Service Interest</label>
                             <select id="service" name="service" required>
-                                <option value="" disabled selected>What type of care are you looking for?</option>
+                                <option value="" disabled selected data-translation-key="contact.servicePlaceholder">What type of care are you looking for?</option>
                                 
                                 <optgroup label="Skilled Nursing Services">
                                     <option value="nursing-care">Skilled Nursing Care</option>
@@ -366,29 +473,31 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Tell us about your needs" required></textarea>
+                            <label for="message" data-translation-key="contact.message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your needs" required data-translation-key="contact.messagePlaceholder"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary" data-translation-key="contact.send">Send Message</button>
                     </form>
                 </div>
                 <div class="contact-info">
                     <div class="info-item">
                         <i class="fas fa-phone"></i>
-                        <h3>Contact</h3>
-                        <p>Phone: (305) 225-5353</p>
-                        <p>Fax: (305) 225-5306</p>
+                        <h3 data-translation-key="contact.title">Contact</h3>
+                        <p><a href="tel:3052255353" class="contact-link">Call Today: (305) 225-5353</a></p>
+                        <p><a href="tel:3052255306" class="contact-link">Fax: (305) 225-5306</a></p>
+                        <p><a href="mailto:info@patients-choice.com" class="contact-link">Email: info@patients-choice.com</a></p>
                         <p>License #299992327</p>
                     </div>
                     <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Email</h3>
-                        <p>info@patientschoicehc.com</p>
+                        <i class="fas fa-location-dot"></i>
+                        <h3 data-translation-key="contact.address">Address</h3>
+                        <p><a href="https://www.google.com/maps/search/?api=1&query=7205+NW+19th+Street+Suite+201+Miami+Florida+33126" target="_blank" rel="noopener noreferrer" class="contact-link">Patients Choice Home Health Agency<br>7205 NW 19th Street, Suite 201<br>Miami, Florida 33126</a></p>
                     </div>
                     <div class="info-item">
-                        <i class="fas fa-location-dot"></i>
-                        <h3>Address</h3>
-                        <p>9360 Sunset Dr #260<br>Miami, FL 33173</p>
+                        <i class="fas fa-clock"></i>
+                        <h3 data-translation-key="contact.officeHours">Office Hours</h3>
+                        <p data-translation-key="contact.officeHoursDesc">Monday–Friday, 9 AM – 5 PM</p>
+                        <p data-translation-key="contact.onCall">On-Call Nurses Available 24/7</p>
                     </div>
                 </div>
             </div>
@@ -398,9 +507,9 @@
     <!-- Call to Action -->
     <section class="cta">
         <div class="container">
-            <h2>Ready to Get Started?</h2>
-            <p>Contact us today to learn more about our services and how we can help you or your loved ones. Our team is ready to provide the care and support you need.</p>
-            <a href="#contact" class="btn">
+            <h2 data-translation-key="cta.title">Ready to Get Started?</h2>
+            <p data-translation-key="cta.subtitle">Contact us today to learn more about our services and how we can help you or your loved ones. Our team is ready to provide the care and support you need.</p>
+            <a href="#contact" class="btn" data-translation-key="cta.button">
                 Contact Us Now
                 <i class="fas fa-arrow-right"></i>
             </a>
@@ -413,37 +522,44 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-brand">
-                        <h3>Patient's Choice</h3>
+                        <h3 data-translation-key="footer.brand">Patient's Choice</h3>
                     </div>
-                    <p>Providing exceptional home health care services with compassion and professionalism. Your health and well-being are our top priorities.</p>
+                    <p data-translation-key="footer.desc">Providing exceptional home health care services with compassion and professionalism. Your health and well-being are our top priorities.</p>
                 </div>
                 <div class="footer-section">
-                    <h3>Quick Links</h3>
+                    <h3 data-translation-key="footer.quickLinks">Quick Links</h3>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#resources">Resources</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#home" data-translation-key="nav.home">Home</a></li>
+                        <li><a href="#services" data-translation-key="nav.services">Services</a></li>
+                        <li><a href="#about" data-translation-key="nav.about">About</a></li>
+                        <li><a href="#resources" data-translation-key="nav.resources">Resources</a></li>
+                        <li><a href="#contact" data-translation-key="nav.contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Connect With Us</h3>
+                    <h3 data-translation-key="footer.connect">Connect With Us</h3>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/patientschoicehhc/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://x.com/patient_choice" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/patient-s-choice-home-health-care-451068119" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/patientschoicehhc16" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <img src="images/patients-choice-icon-final-color.png" alt="Patient's Choice Icon" class="footer-icon">
-                <p>&copy; 2025 Patient's Choice Home Health Care.<br/> All rights reserved. <a href="https://www.patientschoicehhc.com/" target="_blank" rel="noopener noreferrer">www.patientschoicehhc.com</a></p>
+                <p data-translation-key="footer.copyright">&copy; 2025 Patient's Choice Home Health Care.<br/> All rights reserved. <a href="https://www.patients-choice.com/" target="_blank" rel="noopener noreferrer">www.patients-choice.com</a></p>
+                <div class="directory-links">
+                    <a href="https://www.google.com/maps/place/Patient's+Choice+Home+Health+Care/@25.7907,-80.3150,15z" target="_blank" rel="noopener noreferrer">Google Business Profile</a>
+                    <a href="https://www.yelp.com/biz/patients-choice-home-health-care-miami" target="_blank" rel="noopener noreferrer">Yelp</a>
+                    <a href="https://www.bbb.org/us/fl/miami/profile/home-health-care/patients-choice-home-health-care-llc-0633-1000002012" target="_blank" rel="noopener noreferrer">Better Business Bureau</a>
+                    <a href="https://www.healthgrades.com/home-health-care/patients-choice-home-health-care-miami-fl-x8h8h" target="_blank" rel="noopener noreferrer">Healthgrades</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/language-manager.js"></script>
 </body>
 </html> 

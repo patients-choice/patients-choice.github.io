@@ -4,14 +4,6 @@ const nav = document.querySelector('.nav');
 const overlay = document.querySelector('.overlay');
 const body = document.body;
 
-
-function toggleMenu() {
-    hamburger.classList.toggle('active');
-    nav.classList.toggle('active');
-    overlay.classList.toggle('active');
-    body.classList.toggle('no-scroll');
-}
-
 // Add a small delay to the overlay to create a smoother transition
 function openMenu() {
     hamburger.classList.add('active');

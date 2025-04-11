@@ -125,7 +125,7 @@ img {
 .nav ul {
     display: flex;
     list-style: none;
-    gap: 2.5rem;
+    gap: 1.5rem;
 }
 
 .nav a {
@@ -376,21 +376,26 @@ img {
 
 .services p {
     text-align: center;
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto 4rem;
     color: var(--text-light);
     font-size: 1.1rem;
+    line-height: 1.7;
 }
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .service-card {
     background-color: var(--white);
-    padding: 2.5rem 2rem;
+    padding: 1.5rem;
     border-radius: var(--radius);
     text-align: center;
     box-shadow: var(--shadow-sm);
@@ -398,9 +403,6 @@ img {
     border: 1px solid var(--border);
     position: relative;
     overflow: hidden;
-    cursor: pointer;
-    outline: none;
-    height: auto;
 }
 
 .service-card::before {
@@ -428,9 +430,9 @@ img {
 }
 
 .service-card i {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--primary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     transition: var(--transition);
 }
 
@@ -442,28 +444,14 @@ img {
 
 .service-card h3 {
     margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
-
-.service-brief {
-    margin: 0;
-    text-align: center;
-    color: var(--text-light);
+    font-size: 1.35rem;
+    color: var(--primary);
 }
 
 .service-details {
-    height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    margin-top: 0;
-    transform: translateY(-20px);
-}
-
-.service-card.active .service-details {
     height: auto;
     opacity: 1;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     transform: translateY(0);
 }
 
@@ -476,20 +464,12 @@ img {
 
 .service-details li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.75rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     color: var(--text-dark);
-    font-size: 0.95rem;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: all 0.3s ease;
-    transition-delay: calc(var(--i) * 0.1s);
-}
-
-.service-card.active .service-details li {
-    opacity: 1;
-    transform: translateY(0);
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 .service-details i {
@@ -503,27 +483,62 @@ img {
     background-color: rgba(14, 165, 233, 0.1);
     border-radius: 50%;
     color: var(--secondary);
+    flex-shrink: 0;
 }
 
-/* Add a subtle indicator for expandable cards */
-.service-card::after {
-    content: '\f107';
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--text-light);
-    font-size: 1.2rem;
-    opacity: 0.5;
-    transition: var(--transition);
+.services-note {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--background);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
 }
 
-.service-card.active::after {
-    transform: translateX(-50%) rotate(180deg);
-    opacity: 1;
-    color: var(--primary);
+.services-note p {
+    margin: 0;
+    color: var(--text-dark);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto 3rem;
+    }
+    
+    .service-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .services-note {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services h2 {
+        font-size: 2rem;
+    }
+    
+    .services p {
+        font-size: 1rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.35rem;
+    }
+    
+    .service-details li {
+        font-size: 0.9rem;
+    }
+    
+    .services-note p {
+        font-size: 1rem;
+    }
 }
 
 /* Testimonials */
@@ -1641,3 +1656,406 @@ img {
         height: 45px;
     }
 }
+
+/* Language Switcher Styles */
+.language-switcher {
+    margin-left: 20px;
+    display: flex;
+    gap: 5px;
+}
+
+.lang-btn {
+    background: none;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.lang-btn.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.team-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.team-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-dark);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.team-list i {
+    color: var(--secondary);
+    font-size: 1.2rem;
+    background-color: rgba(14, 165, 233, 0.1);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* Insurance Section */
+.insurance {
+    padding: 8rem 0;
+    background-color: var(--background);
+    position: relative;
+}
+
+.insurance::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom right, transparent 49%, var(--background) 50%);
+}
+
+.insurance h2 {
+    text-align: center;
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.insurance h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--secondary);
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+.insurance p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    color: var(--text-light);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.insurance-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.insurance-card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+}
+
+.insurance-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: var(--transition);
+}
+
+.insurance-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.insurance-card:hover::before {
+    transform: scaleX(1);
+}
+
+.insurance-card i {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    transition: var(--transition);
+}
+
+.insurance-card:hover i {
+    transform: scale(1.1);
+    color: var(--secondary);
+}
+
+.insurance-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.35rem;
+    color: var(--primary);
+}
+
+.insurance-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.insurance-card li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.insurance-card li i {
+    font-size: 1rem;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(14, 165, 233, 0.1);
+    border-radius: 50%;
+    color: var(--secondary);
+    flex-shrink: 0;
+}
+
+.insurance-note {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.private-pay,
+.insurance-support {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+}
+
+.private-pay h3,
+.insurance-support h3 {
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+    font-size: 1.35rem;
+}
+
+.private-pay p,
+.insurance-support p {
+    margin: 0;
+    color: var(--text-dark);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .insurance-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto 3rem;
+    }
+    
+    .insurance-note {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .insurance-card,
+    .private-pay,
+    .insurance-support {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .insurance h2 {
+        font-size: 2rem;
+    }
+    
+    .insurance p {
+        font-size: 1rem;
+    }
+    
+    .insurance-card h3,
+    .private-pay h3,
+    .insurance-support h3 {
+        font-size: 1.35rem;
+    }
+    
+    .insurance-card li {
+        font-size: 0.9rem;
+    }
+    
+    .private-pay p,
+    .insurance-support p {
+        font-size: 1rem;
+    }
+}
+
+.contact-link {
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+}
+
+.contact-link:hover {
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.contact-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--primary);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.contact-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.info-item a.contact-link {
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.info-item a.contact-link:hover {
+    color: var(--primary);
+}
+
+.info-item a.contact-link[href^="tel:"] {
+    position: relative;
+}
+
+/* Style for phone number (not fax) */
+.info-item a.contact-link[href^="tel:"]:not([href$="5306"])::before {
+    content: '\f095';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-right: 8px;
+    display: inline-block;
+    font-size: 0.9em;
+}
+
+/* Style specifically for fax number */
+.info-item a.contact-link[href$="5306"]::before {
+    content: '\f1ac';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-right: 8px;
+    display: inline-block;
+    font-size: 0.9em;
+}
+
+/* Style for email link */
+.info-item a.contact-link[href^="mailto:"]::before {
+    content: '\f0e0';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-right: 8px;
+    display: inline-block;
+    font-size: 0.9em;
+}
+
+/* Style for map link */
+.info-item a.contact-link[href*="google.com/maps"]::before {
+    content: '\f3c5';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-right: 8px;
+    display: inline-block;
+    font-size: 0.9em;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.directory-links {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.directory-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.directory-links a:hover {
+    color: #4CAF50;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+    .directory-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    
+    .directory-links a {
+        width: 100%;
+        text-align: center;
+    }
+} 
