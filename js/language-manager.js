@@ -3,10 +3,14 @@ const translations = {
     en: {
         // Navigation
         'nav.home': 'Home',
+        'nav.about': 'About Us',
         'nav.services': 'Services',
-        'nav.about': 'About',
-        'nav.resources': 'Resources',
+        'nav.insurance': 'Insurance',
         'nav.contact': 'Contact',
+        'nav.testimonials': 'Testimonials',
+        'nav.careers': 'Careers',
+        'nav.faqs': 'FAQs',
+        'nav.resources': 'Resources',
         
         // Hero Section
         'hero.title': 'Your Health, <span class="priority-text">Our Priority</span>',
@@ -126,15 +130,60 @@ const translations = {
         'footer.desc': 'Providing exceptional home health care services with compassion and professionalism. Your health and well-being are our top priorities.',
         'footer.quickLinks': 'Quick Links',
         'footer.connect': 'Connect With Us',
-        'footer.copyright': '© 2025 Patient\'s Choice Home Health Care. All rights reserved.'
+        'footer.copyright': '© 2025 Patient\'s Choice Home Health Care. All rights reserved.',
+        
+        // Testimonials Section
+        'testimonials.title': 'What Our Patients Say',
+        'testimonials.subtitle': 'Hear from our patients about their experiences with Patient\'s Choice Home Health Care.',
+        'testimonials.quote1': '"After my mom\'s surgery, Patients Choice came to our home. Their nurse was incredible – compassionate, gentle, and professional. I highly recommend them!"',
+        'testimonials.author1': 'Maria G.',
+        'testimonials.quote2': '"Thanks to their diabetic care program, my sugar levels are under control. I\'ve learned so much!"',
+        'testimonials.author2': 'Carlos M.',
+        'testimonials.quote3': '"They helped me recover comfortably after my cosmetic procedure. So professional and discreet!"',
+        'testimonials.author3': 'Emily S.',
+        
+        // Careers Section
+        'careers.title': 'Careers at Patient\'s Choice',
+        'careers.subtitle': 'We\'re hiring compassionate professionals who want to make a difference!',
+        'careers.positions': 'Now Hiring',
+        'careers.position1': 'RNs / LPNs',
+        'careers.position2': 'Physical & Occupational Therapists',
+        'careers.position3': 'CNAs / HHAs',
+        'careers.position4': 'Medical Social Workers',
+        'careers.position5': 'Intake Coordinators',
+        'careers.benefits': 'Benefits',
+        'careers.benefit1': 'Competitive Pay',
+        'careers.benefit2': 'Flexible Scheduling',
+        'careers.benefit3': 'Supportive Work Environment',
+        'careers.benefit4': 'Ongoing Training',
+        'careers.apply': 'Apply Today',
+        'careers.applyDesc': 'Send your resume to <a href="mailto:careers@patientschoice.com" class="contact-link">careers@patientschoice.com</a>',
+        
+        // FAQs Section
+        'faqs.title': 'Frequently Asked Questions',
+        'faqs.subtitle': 'Find answers to common questions about our services and care.',
+        'faqs.question1': 'What is home health care?',
+        'faqs.answer1': 'Medical care provided in your home by nurses, therapists, and aides under a physician\'s direction.',
+        'faqs.question2': 'Who qualifies?',
+        'faqs.answer2': 'Patients who are homebound and require intermittent skilled care.',
+        'faqs.question3': 'Is it covered by insurance?',
+        'faqs.answer3': 'Yes! Medicare, Medicaid, and most private insurances cover qualified services.',
+        'faqs.question4': 'Do you offer private-pay services?',
+        'faqs.answer4': 'Yes – especially for cosmetic recovery and concierge care.',
+        'faqs.question5': 'How do I start?',
+        'faqs.answer5': 'Call us or have your doctor send a referral. We\'ll handle the rest!'
     },
     es: {
         // Navigation
         'nav.home': 'Inicio',
-        'nav.services': 'Servicios',
         'nav.about': 'Sobre Nosotros',
-        'nav.resources': 'Recursos',
+        'nav.services': 'Servicios',
+        'nav.insurance': 'Seguros',
         'nav.contact': 'Contacto',
+        'nav.testimonials': 'Testimonios',
+        'nav.careers': 'Carreras',
+        'nav.faqs': 'Preguntas Frecuentes',
+        'nav.resources': 'Recursos',
         
         // Hero Section
         'hero.title': 'Su Salud, <span class="priority-text">Nuestra Prioridad</span>',
@@ -254,7 +303,48 @@ const translations = {
         'footer.desc': 'Proporcionando servicios excepcionales de atención médica en el hogar con compasión y profesionalismo. Su salud y bienestar son nuestras principales prioridades.',
         'footer.quickLinks': 'Enlaces Rápidos',
         'footer.connect': 'Conéctese con Nosotros',
-        'footer.copyright': '© 2025 Patient\'s Choice Home Health Care. Todos los derechos reservados.'
+        'footer.copyright': '© 2025 Patient\'s Choice Home Health Care. Todos los derechos reservados.',
+        
+        // Testimonials Section
+        'testimonials.title': 'Lo Que Dicen Nuestros Pacientes',
+        'testimonials.subtitle': 'Escuche las experiencias de nuestros pacientes con Patient\'s Choice Home Health Care.',
+        'testimonials.quote1': '"Después de la cirugía de mi mamá, Patients Choice vino a nuestra casa. Su enfermera fue increíble – compasiva, gentil y profesional. ¡Los recomiendo altamente!"',
+        'testimonials.author1': 'María G.',
+        'testimonials.quote2': '"Gracias a su programa de cuidado diabético, mis niveles de azúcar están bajo control. ¡He aprendido tanto!"',
+        'testimonials.author2': 'Carlos M.',
+        'testimonials.quote3': '"Me ayudaron a recuperarme cómodamente después de mi procedimiento cosmético. ¡Tan profesionales y discretos!"',
+        'testimonials.author3': 'Emily S.',
+        
+        // Careers Section
+        'careers.title': 'Carreras en Patient\'s Choice',
+        'careers.subtitle': '¡Estamos contratando profesionales compasivos que quieren marcar la diferencia!',
+        'careers.positions': 'Contratando Ahora',
+        'careers.position1': 'RNs / LPNs',
+        'careers.position2': 'Terapeutas Físicos y Ocupacionales',
+        'careers.position3': 'CNAs / HHAs',
+        'careers.position4': 'Trabajadores Sociales Médicos',
+        'careers.position5': 'Coordinadores de Admisión',
+        'careers.benefits': 'Beneficios',
+        'careers.benefit1': 'Salario Competitivo',
+        'careers.benefit2': 'Horario Flexible',
+        'careers.benefit3': 'Ambiente de Trabajo de Apoyo',
+        'careers.benefit4': 'Capacitación Continua',
+        'careers.apply': 'Aplica Hoy',
+        'careers.applyDesc': 'Envía tu currículum a <a href="mailto:careers@patientschoice.com" class="contact-link">careers@patientschoice.com</a>',
+        
+        // FAQs Section
+        'faqs.title': 'Preguntas Frecuentes',
+        'faqs.subtitle': 'Encuentre respuestas a preguntas comunes sobre nuestros servicios y atención.',
+        'faqs.question1': '¿Qué es la atención médica en el hogar?',
+        'faqs.answer1': 'Atención médica proporcionada en su hogar por enfermeras, terapeutas y asistentes bajo la dirección de un médico.',
+        'faqs.question2': '¿Quién califica?',
+        'faqs.answer2': 'Pacientes que están confinados en casa y requieren atención especializada intermitente.',
+        'faqs.question3': '¿Está cubierto por el seguro?',
+        'faqs.answer3': '¡Sí! Medicare, Medicaid y la mayoría de los seguros privados cubren servicios calificados.',
+        'faqs.question4': '¿Ofrecen servicios de pago privado?',
+        'faqs.answer4': 'Sí, especialmente para recuperación cosmética y atención de conserjería.',
+        'faqs.question5': '¿Cómo empiezo?',
+        'faqs.answer5': '¡Llámenos o haga que su médico envíe una referencia. Nosotros nos encargamos del resto!'
     }
 };
 
@@ -268,7 +358,7 @@ function setLanguage(lang) {
         const key = element.getAttribute('data-translation-key');
         if (translations[lang] && translations[lang][key]) {
             // Use innerHTML for elements that contain HTML
-            if (key === 'hero.title') {
+            if (key === 'hero.title' || key === 'careers.applyDesc') {
                 element.innerHTML = translations[lang][key];
             } else {
                 element.textContent = translations[lang][key];
