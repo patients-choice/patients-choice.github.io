@@ -350,6 +350,27 @@ img {
 .cta-buttons {
     display: flex;
     gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .language-notice {
+        margin: 1rem 0;
+        text-align: left;
+    }
 }
 
 /* Services Section */
@@ -1337,6 +1358,7 @@ img {
     .cta-buttons {
         flex-direction: column;
         gap: 1rem;
+        width: 100%;
     }
     
     .btn {
@@ -1368,6 +1390,11 @@ img {
     
     .footer-brand h3 {
         margin-bottom: 0.5rem;
+    }
+    
+    .language-notice {
+        margin: 1rem 0;
+        text-align: left;
     }
 }
 
@@ -2056,47 +2083,43 @@ img {
     }
 }
 
+/* Language notice visibility */
 .language-notice {
     margin: 1rem 0;
     text-align: left;
+    display: none; /* Hide all by default */
 }
 
-/* Hide language notice when page is in Spanish */
-[data-lang="es"] .language-notice[data-lang-visibility="en"] {
-    display: none;
+/* Show appropriate language notice based on current language */
+html[lang="en"] .language-notice[data-lang-visibility="en"],
+html[lang="es"] .language-notice[data-lang-visibility="es"] {
+    display: block;
 }
 
-.language-link {
+.language-notice .lang-btn {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50px;
     color: white;
     text-decoration: none;
     font-size: 0.85rem;
     transition: all 0.3s ease;
+    cursor: pointer;
     opacity: 0.8;
 }
 
-.language-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+.language-notice .lang-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
     opacity: 1;
     transform: translateY(-1px);
 }
 
-.language-link i {
+.language-notice .lang-btn i {
     font-size: 0.9rem;
-}
-
-@media (max-width: 768px) {
-    .language-link {
-        width: auto;
-        justify-content: flex-start;
-        padding: 0.5rem 1rem;
-    }
 }
 
 /* Section Headers */
