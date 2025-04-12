@@ -9,7 +9,7 @@ const translations = {
         'nav.contact': 'Contact',
         
         // Hero Section
-        'hero.title': 'Your Health, Our Priority',
+        'hero.title': 'Your Health, <span class="priority-text">Our Priority</span>',
         'hero.subtitle': 'Patient\'s Choice Home Health Care is thankful for the opportunity to make a positive difference to your health and your life at home. Whether you\'re battling a chronic illness, a disability, or facing challenges with daily activities, we will be there. You can count on our team of professionals 24 hours a day 7 days a week to help you through it all.',
         'hero.requestCare': 'Request Care',
         'hero.ourServices': 'Our Services',
@@ -137,7 +137,7 @@ const translations = {
         'nav.contact': 'Contacto',
         
         // Hero Section
-        'hero.title': 'Su Salud, Nuestra Prioridad',
+        'hero.title': 'Su Salud, <span class="priority-text">Nuestra Prioridad</span>',
         'hero.subtitle': 'Patient\'s Choice Home Health Care está agradecido por la oportunidad de hacer una diferencia positiva en su salud y su vida en el hogar. Ya sea que esté lidiando con una enfermedad crónica, una discapacidad o enfrentando desafíos con las actividades diarias, estaremos allí. Puede contar con nuestro equipo de profesionales las 24 horas del día, los 7 días de la semana para ayudarlo en todo.',
         'hero.requestCare': 'Solicitar Atención',
         'hero.ourServices': 'Nuestros Servicios',
@@ -267,7 +267,12 @@ function setLanguage(lang) {
     document.querySelectorAll('[data-translation-key]').forEach(element => {
         const key = element.getAttribute('data-translation-key');
         if (translations[lang] && translations[lang][key]) {
-            element.textContent = translations[lang][key];
+            // Use innerHTML for elements that contain HTML
+            if (key === 'hero.title') {
+                element.innerHTML = translations[lang][key];
+            } else {
+                element.textContent = translations[lang][key];
+            }
         }
     });
     

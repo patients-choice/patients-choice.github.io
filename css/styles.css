@@ -236,10 +236,21 @@ img {
     align-items: center;
 }
 
+.hero-text {
+    flex: 1;
+    padding-right: 2rem;
+}
+
 .hero-text h1 {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
     line-height: 1.1;
+    color: var(--white);
+}
+
+.hero-text h1 .priority-text {
+    color: #7dd3fc;
+    display: block;
 }
 
 .hero-text p {
@@ -2057,5 +2068,48 @@ img {
     .directory-links a {
         width: 100%;
         text-align: center;
+    }
+}
+
+.language-notice {
+    margin: 1rem 0;
+    text-align: left;
+}
+
+/* Hide language notice when page is in Spanish */
+[data-lang="es"] .language-notice[data-lang-visibility="en"] {
+    display: none;
+}
+
+.language-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.language-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+.language-link i {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .language-link {
+        width: auto;
+        justify-content: flex-start;
+        padding: 0.5rem 1rem;
     }
 } 
