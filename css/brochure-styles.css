@@ -281,11 +281,11 @@ img {
     font-size: 3rem;
     margin-bottom: 1.5rem;
     line-height: 1.1;
-    color: var(--teal-dark);
+    color: var(--white);
 }
 
 .hero-text h1 .priority-text {
-    color: var(--white);
+    color: var(--text-dark);
     display: block;
 }
 
@@ -325,7 +325,7 @@ img {
     right: -20px;
     width: 100%;
     height: 100%;
-    border: 3px solid var(--rose);
+    border: 3px solid var(--teal);
     border-radius: var(--radius);
     z-index: -1;
 }
