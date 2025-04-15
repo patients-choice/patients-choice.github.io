@@ -357,15 +357,15 @@ img {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--coral), var(--rose));
+    background: linear-gradient(135deg, #FF6B55, #FF8573);
     color: var(--white);
-    box-shadow: 0 4px 6px rgba(255, 139, 126, 0.3);
+    box-shadow: 0 4px 6px rgba(255, 107, 85, 0.3);
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, var(--rose), var(--coral));
+    background: linear-gradient(135deg, #FF8573, #FF6B55);
     transform: translateY(-3px);
-    box-shadow: 0 6px 8px rgba(255, 139, 126, 0.4);
+    box-shadow: 0 6px 8px rgba(255, 107, 85, 0.4);
 }
 
 .btn-secondary {
@@ -1097,8 +1097,8 @@ img {
     justify-content: center;
     gap: 0.5rem;
     padding: 1rem 2rem;
-    background-color: var(--white);
-    color: var(--text-blue);
+    background-color: var(--teal);
+    color: var(--white);
     border: none;
     border-radius: var(--radius);
     font-size: 1.1rem;
@@ -1107,6 +1107,13 @@ img {
     transition: all 0.3s ease;
     max-width: 200px;
     margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(64, 196, 178, 0.3);
+}
+
+.cta .btn:hover {
+    background-color: var(--text-blue);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(27, 75, 135, 0.15);
 }
 
 @media (max-width: 768px) {
@@ -1508,6 +1515,16 @@ img {
     .language-notice {
         margin: 1rem 0;
         text-align: left;
+    }
+    
+    .logo {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.25rem;
+    }
+    .header-text h2 {
+        font-size: 1.25rem;
+        margin-top: -10px;
     }
 }
 
@@ -2278,21 +2295,20 @@ html[lang="es"] .language-notice[data-lang-visibility="es"] {
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50px;
-    color: white;
+    color: var(--text-dark);
     text-decoration: none;
     font-size: 0.85rem;
     transition: all 0.3s ease;
     cursor: pointer;
-    opacity: 0.8;
 }
 
 .language-notice .lang-btn:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.85);
     transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .language-notice .lang-btn i {
