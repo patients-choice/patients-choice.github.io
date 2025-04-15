@@ -1,6 +1,9 @@
 // Language translations
 const translations = {
     en: {
+        // Header
+        'header.title': 'Home Health Care',
+        
         // Navigation
         'nav.home': 'Home',
         'nav.about': 'About Us',
@@ -354,6 +357,9 @@ const translations = {
         'contact.info.companyName': 'Patients Choice Home Health Agency',
     },
     es: {
+        // Header
+        'header.title': 'Cuidado de Salud en el Hogar',
+        
         // Navigation
         'nav.home': 'Inicio',
         'nav.about': 'Sobre Nosotros',

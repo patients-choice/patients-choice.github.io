@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient's Choice Brochure - Color Palette Demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --coral: #FF8B7E;
+            --rose: #FF9EBC;
+            --teal: #40C4B2;
+            --white: #FFFFFF;
+            --text-dark: #333333;
+            --text-blue: #1B4B87;
+            --radius: 8px;
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #f5f5f5;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .color-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .color-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .color-swatch {
+            width: 100%;
+            height: 120px;
+            border-radius: var(--radius);
+            margin-bottom: 1rem;
+        }
+
+        .color-info {
+            margin-bottom: 1rem;
+        }
+
+        .color-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .color-hex {
+            font-family: monospace;
+            color: #666;
+        }
+
+        .example-section {
+            margin: 3rem 0;
+        }
+
+        .brochure-demo {
+            max-width: 400px;
+            margin: 2rem auto;
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .brochure-demo::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+            background: linear-gradient(135deg, 
+                var(--coral) 0%, 
+                var(--coral) 30%, 
+                var(--rose) 60%, 
+                transparent 60%
+            );
+        }
+
+        .brochure-demo::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(225deg, var(--teal) 0%, var(--teal) 40%, transparent 40%);
+        }
+
+        .brochure-content {
+            position: relative;
+            z-index: 1;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .brochure-title {
+            color: var(--text-dark);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .brochure-subtitle {
+            color: var(--text-blue);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .brochure-spanish {
+            color: var(--text-dark);
+            font-style: italic;
+        }
+
+        .usage-examples {
+            margin-top: 3rem;
+        }
+
+        .text-example {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            margin-bottom: 1rem;
+        }
+
+        .button-example {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius);
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-coral {
+            background: var(--coral);
+            color: var(--white);
+        }
+
+        .btn-teal {
+            background: var(--teal);
+            color: var(--white);
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        .gradient-swatch {
+            width: 100%;
+            height: 120px;
+            border-radius: var(--radius);
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--coral) 0%, var(--coral) 30%, var(--rose) 70%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Patient's Choice Brochure Color Palette</h1>
+        
+        <!-- Color Swatches -->
+        <section>
+            <h2>Brand Colors</h2>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="gradient-swatch"></div>
+                    <div class="color-info">
+                        <div class="color-name">Header Gradient</div>
+                        <div class="color-hex">Coral (#FF8B7E) → Rose (#FF9EBC)</div>
+                    </div>
+                    <p>Primary brand gradient used for headers and warm accents</p>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: var(--coral);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Coral</div>
+                        <div class="color-hex">#FF8B7E</div>
+                    </div>
+                    <p>Primary warm accent color</p>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: var(--rose);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Rose</div>
+                        <div class="color-hex">#FF9EBC</div>
+                    </div>
+                    <p>Secondary warm accent color</p>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: var(--teal);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Teal</div>
+                        <div class="color-hex">#40C4B2</div>
+                    </div>
+                    <p>Used for accents and medical imagery</p>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: var(--text-blue);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Blue</div>
+                        <div class="color-hex">#1B4B87</div>
+                    </div>
+                    <p>Used for important text and professional emphasis</p>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: var(--text-dark);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Dark Text</div>
+                        <div class="color-hex">#333333</div>
+                    </div>
+                    <p>Main text color for readability</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brochure Example -->
+        <section class="example-section">
+            <h2>Brochure Style Example</h2>
+            <div class="brochure-demo">
+                <div class="brochure-content">
+                    <div class="brochure-title">Patient's Choice</div>
+                    <div class="brochure-subtitle">HOME HEALTH CARE</div>
+                    <p class="brochure-subtitle">We Are The First Choice In<br>Exceptional Care</p>
+                    <p class="brochure-spanish">La Primera En Atención</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Usage Examples -->
+        <section class="usage-examples">
+            <h2>Usage Examples</h2>
+            
+            <div class="example-section">
+                <h3>Text Styles</h3>
+                <div class="text-example">
+                    <h3 style="color: var(--text-dark);">Main Heading</h3>
+                    <p style="color: var(--text-blue);">Important tagline or subtitle text</p>
+                    <p style="color: var(--text-dark);">Regular body text for content</p>
+                </div>
+            </div>
+
+            <div class="example-section">
+                <h3>Button Styles</h3>
+                <div class="button-example">
+                    <button class="btn" style="background: linear-gradient(135deg, var(--coral) 0%, var(--rose) 100%); color: var(--white);">Gradient Button</button>
+                    <button class="btn btn-coral">Coral Button</button>
+                    <button class="btn" style="background: var(--rose); color: var(--white);">Rose Button</button>
+                    <button class="btn btn-teal">Teal Button</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html> 
