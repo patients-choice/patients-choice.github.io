@@ -1,78 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <!-- Main Pages -->
     <url>
-        <loc>https://www.patients-choice.com/</loc>
+        <loc>https://www.patients-choice.com/index.html</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://www.patients-choice.com/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://www.patients-choice.com/es"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.patients-choice.com/index.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.patients-choice.com/es/index.html"/>
     </url>
     <url>
-        <loc>https://www.patients-choice.com/es</loc>
+        <loc>https://www.patients-choice.com/es/index.html</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://www.patients-choice.com/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://www.patients-choice.com/es"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.patients-choice.com/index.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.patients-choice.com/es/index.html"/>
+    </url>
+
+    <!-- Homepage Sections -->
+    <url>
+        <loc>https://www.patients-choice.com/index.html#home</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://www.patients-choice.com/services</loc>
+        <loc>https://www.patients-choice.com/index.html#services</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://www.patients-choice.com/services/skilled-nursing</loc>
+        <loc>https://www.patients-choice.com/index.html#insurance</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.patients-choice.com/services/therapy</loc>
+        <loc>https://www.patients-choice.com/index.html#about</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.patients-choice.com/services/home-health-aide</loc>
+        <loc>https://www.patients-choice.com/index.html#contact</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.patients-choice.com/contact</loc>
-        <lastmod>2024-03-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.patients-choice.com/about</loc>
+        <loc>https://www.patients-choice.com/index.html#testimonials</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://www.patients-choice.com/insurance</loc>
+        <loc>https://www.patients-choice.com/index.html#faqs</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Resources Page -->
+    <url>
+        <loc>https://www.patients-choice.com/resources.html</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.patients-choice.com/resources.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.patients-choice.com/es/resources.html"/>
+    </url>
+    <url>
+        <loc>https://www.patients-choice.com/es/resources.html</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.patients-choice.com/resources.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.patients-choice.com/es/resources.html"/>
+    </url>
+
+    <!-- Resources Page Sections -->
+    <url>
+        <loc>https://www.patients-choice.com/resources.html#insurance-info</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://www.patients-choice.com/resources</loc>
+        <loc>https://www.patients-choice.com/resources.html#forms</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.patients-choice.com/resources.html#external-resources</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Additional Pages -->
+    <url>
+        <loc>https://www.patients-choice.com/careers.html</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://www.patients-choice.com/careers</loc>
-        <lastmod>2024-03-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://www.patients-choice.com/faqs</loc>
+        <loc>https://www.patients-choice.com/faqs.html</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>

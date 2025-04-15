@@ -5,5 +5,6 @@ Disallow: /admin/
 Disallow: /cgi-bin/
 Disallow: /tmp/
 Disallow: /includes/
+Disallow: /dev/
 
 Sitemap: https://www.patients-choice.com/sitemap.xml 

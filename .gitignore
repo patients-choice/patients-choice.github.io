@@ -1,3 +1,8 @@
 patients-choice.github.io.code-workspace
 forms/generate_pdfs.py
 forms/requirements.txt
+dev/brochure-color-palette-demo.html
+dev/color-palette-demo.html
+dev/convert_to_pdf.py
+dev/generate_pdfs.py
+dev/old-index.html
