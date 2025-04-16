@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <a href="https://www.bbb.org/us/fl/miami/profile/home-health-care/patients-choice-home-health-care-llc-0633-1000002012" target="_blank" rel="noopener noreferrer">Better Business Bureau</a>
                 <a href="https://www.healthgrades.com/home-health-care/patients-choice-home-health-care-miami-fl-x8h8h" target="_blank" rel="noopener noreferrer">Healthgrades</a>
             </div>
+            <a href="https://ricknet.com" target="_blank" rel="noopener noreferrer" class="website-credit">website by RGE Automation</a>
         </div>
     </div>
 </footer>`;
@@ -69,4 +70,4 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Insert the footer at the end of the body
     document.body.appendChild(footerContainer);
-}); 
+});

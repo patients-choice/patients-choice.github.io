@@ -3,6 +3,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const headerContainer = document.createElement('div');
     headerContainer.id = 'header-container';
     
+    // Add meta tags for author and website credits
+    const metaAuthor = document.createElement('meta');
+    metaAuthor.name = 'author';
+    metaAuthor.content = 'RGE Automation';
+    document.head.appendChild(metaAuthor);
+    
+    const metaGenerator = document.createElement('meta');
+    metaGenerator.name = 'generator';
+    metaGenerator.content = 'RGE Automation - https://ricknet.com';
+    document.head.appendChild(metaGenerator);
+    
     // Determine if we're on the resources page
     const isResourcesPage = window.location.pathname.includes('resources.html');
     

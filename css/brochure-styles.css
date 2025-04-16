@@ -3243,4 +3243,29 @@ section h2::after {
         gap: 1rem;
     }
 }
+
+.website-credit {
+    color: transparent;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: color 0.3s ease;
+    margin-top: 0.5rem;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.website-credit:hover {
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+}
+
+.website-credit:focus {
+    outline: none;
+}
   
