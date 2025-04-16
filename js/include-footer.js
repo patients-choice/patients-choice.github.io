@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <span data-translation-key="contact.info.address.line1">7205 NW 19th Street, Suite 201</span><br>
                     <span data-translation-key="contact.info.address.line2">Miami, Florida 33126</span>
                 </p>
-                <h3 data-translation-key="footer.hours" style="margin-top: 1.5rem;">Office Hours</h3>
+                <h3 data-translation-key="footer.hours">Office Hours</h3>
                 <p data-translation-key="contact.info.hours">Monday–Friday, 9 AM – 5 PM</p>
                 <p data-translation-key="footer.onCall">On-Call Nurses Available 24/7</p>
             </div>

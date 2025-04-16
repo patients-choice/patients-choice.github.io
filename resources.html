@@ -16,33 +16,102 @@
     <meta name="language" content="English">
     <meta name="alternate" hreflang="es" href="https://www.patients-choice.com/es/resources" />
     <meta name="alternate" hreflang="en" href="https://www.patients-choice.com/resources" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.patients-choice.com/resources">
+    <meta property="og:title" content="Resources | Patient's Choice Home Health Care">
+    <meta property="og:description" content="Access helpful resources, forms, and information about insurance coverage and home health care services at Patient's Choice Home Health Care.">
+    <meta property="og:image" content="https://www.patients-choice.com/images/patients-choice-logo-updated-colors.png">
+    <meta property="og:site_name" content="Patient's Choice Home Health Care">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.patients-choice.com/resources">
+    <meta property="twitter:title" content="Resources | Patient's Choice Home Health Care">
+    <meta property="twitter:description" content="Access helpful resources, forms, and information about insurance coverage and home health care services at Patient's Choice Home Health Care.">
+    <meta property="twitter:image" content="https://www.patients-choice.com/images/patients-choice-logo-updated-colors.png">
+
+    <!-- Schema.org markup for Google+ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Resources | Patient's Choice Home Health Care",
+        "description": "Access helpful resources, forms, and information about insurance coverage and home health care services",
+        "url": "https://www.patients-choice.com/resources",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Patient's Choice Home Health Care",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.patients-choice.com/images/patients-choice-logo-updated-colors.png"
+            }
+        },
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@type": "WebPage",
+                        "name": "Insurance Information",
+                        "description": "Learn about Medicare, Medicaid, and private insurance coverage options",
+                        "url": "https://www.patients-choice.com/resources#insurance-info"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@type": "WebPage",
+                        "name": "Downloadable Forms",
+                        "description": "Access important forms for referrals, intake, and care management",
+                        "url": "https://www.patients-choice.com/resources#forms"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@type": "WebPage",
+                        "name": "External Resources",
+                        "description": "Find trusted organizations and agencies for additional support",
+                        "url": "https://www.patients-choice.com/resources#external-resources"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Header will be inserted here by include-header.js -->
-
-    <!-- Insurance Information Section -->
-    <section id="insurance-info" class="services">
+     
+    <!-- Welcome Section -->
+    <section id="welcome" class="services">
         <div class="container">
             <div class="services-grid">
-                <div class="service-card" style="grid-column: 1 / -1; max-width: 800px; margin: 0 auto;">
+                <div class="service-card full-width">
                     <i class="fas fa-book-medical"></i>
                     <h3 data-translation-key="resources.welcome.title">Welcome to Our Resources Center</h3>
                     <div class="service-details">
                         <p data-translation-key="resources.welcome.desc">Welcome to our Resources page. Here you'll find helpful information about insurance coverage, downloadable forms, and external links to reputable organizations. We've compiled everything in one place for your convenience.</p>
-                        
+
                         <div class="resources-mini-cards">
                             <a href="#insurance-info" class="resource-mini-card">
                                 <i class="fas fa-shield-heart"></i>
                                 <h4 data-translation-key="resources.insurance.title">Insurance Information</h4>
                                 <p data-translation-key="resources.insurance.desc">Learn about Medicare, Medicaid, and private insurance coverage options.</p>
                             </a>
-                            
+
                             <a href="#forms" class="resource-mini-card">
                                 <i class="fas fa-file-medical"></i>
                                 <h4 data-translation-key="resources.forms.title">Downloadable Forms</h4>
                                 <p data-translation-key="resources.forms.desc">Access important forms for referrals, intake, and care management.</p>
                             </a>
-                            
+
                             <a href="#external-resources" class="resource-mini-card">
                                 <i class="fas fa-external-link-alt"></i>
                                 <h4 data-translation-key="resources.external.title">External Resources</h4>
@@ -52,6 +121,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Insurance Information Section -->
+    <section id="insurance-info" class="services">
+        <div class="container">
             <h2 data-translation-key="resources.insurance.section.title">Insurance and Medicare/Medicaid Information</h2>
             <p data-translation-key="resources.insurance.section.desc">We accept multiple insurance plans to make our home health services accessible. Below is a summary of coverage options and how home health care is covered:</p>
             
@@ -67,7 +142,9 @@
                             <li><i class="fas fa-check"></i> <span data-translation-key="resources.medicare.bullet4">Face-to-face evaluation required</span></li>
                             <li><i class="fas fa-check"></i> <span data-translation-key="resources.medicare.bullet5">Services by Medicare-certified agency only</span></li>
                         </ul>
-                        <p class="mt-3" data-translation-key="resources.medicare.link">For more details on Medicare eligibility and benefits, visit the <a href="https://www.medicare.gov" target="_blank" rel="noopener noreferrer" class="contact-link">official Medicare website</a>.</p>
+                        <div class="medicare-link-container">
+                            <p class="mt-3" data-translation-key="resources.medicare.link">For more details on Medicare eligibility and benefits, visit the <a href="https://www.medicare.gov/" target="_blank" rel="noopener noreferrer" class="medicare-link">official Medicare website</a>.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -100,7 +177,7 @@
             </div>
 
             <div class="services-note">
-                <p data-translation-key="resources.insurance.note">If you have questions about your coverage or eligibility, feel free to <a href="index.html#contact" class="contact-link">call us</a>. We can help you understand your plan's home health benefits and even direct you to the right resources (such as Medicare or Medicaid information tools) for further information.</p>
+                <p data-translation-key="resources.insurance.note">If you have questions about your coverage or eligibility, feel free to call us. We can help you understand your plan's home health benefits and even direct you to the right resources (such as Medicare or Medicaid information tools) for further information.</p>
             </div>
         </div>
     </section>
@@ -112,39 +189,40 @@
             <p data-translation-key="resources.forms.section.desc">For your convenience, we provide important forms that you can download, print, or fill out to expedite your care process. Below are the forms available (in PDF format and, where noted, as fillable electronic forms):</p>
             
             <div class="resources-grid">
-                <a href="forms/referral-form.pdf" class="resource-card" target="_blank" rel="noopener noreferrer">
+                <div class="resource-card">
                     <i class="fas fa-file-medical"></i>
                     <h3 data-translation-key="resources.forms.referral.title">Referral Form</h3>
                     <p data-translation-key="resources.forms.referral.desc">For physicians, hospitals, or clinics to refer a patient. Includes sections for patient information, diagnosis, requested services, and physician signature. Available as printable PDF and electronic form.</p>
-                </a>
+                </div>
 
-                <a href="forms/patient-intake.pdf" class="resource-card" target="_blank" rel="noopener noreferrer">
+                <div class="resource-card">
                     <i class="fas fa-clipboard-list"></i>
                     <h3 data-translation-key="resources.forms.intake.title">New Patient Intake Packet</h3>
                     <p data-translation-key="resources.forms.intake.desc">Comprehensive admission packet containing patient information forms, consent for treatment, medical history questionnaire, and patient rights & responsibilities.</p>
-                </a>
+                </div>
 
-                <a href="forms/hipaa-consent.pdf" class="resource-card" target="_blank" rel="noopener noreferrer">
+                <div class="resource-card">
                     <i class="fas fa-user-shield"></i>
                     <h3 data-translation-key="resources.forms.hipaa.title">HIPAA Consent/Release Form</h3>
                     <p data-translation-key="resources.forms.hipaa.desc">Authorize our agency to share your protected health information with designated family members or caregivers in compliance with HIPAA regulations.</p>
-                </a>
+                </div>
 
-                <a href="forms/medication-list.pdf" class="resource-card" target="_blank" rel="noopener noreferrer">
+                <div class="resource-card">
                     <i class="fas fa-pills"></i>
                     <h3 data-translation-key="resources.forms.medication.title">Medication List Template</h3>
                     <p data-translation-key="resources.forms.medication.desc">Simple worksheet to record current medications, dosages, times of day, and prescribing doctor. Useful for doctor visits and emergencies.</p>
-                </a>
+                </div>
 
-                <a href="forms/caregiver-checklist.pdf" class="resource-card" target="_blank" rel="noopener noreferrer">
+                <div class="resource-card">
                     <i class="fas fa-clipboard-check"></i>
                     <h3 data-translation-key="resources.forms.caregiver.title">Caregiver Daily Checklist</h3>
                     <p data-translation-key="resources.forms.caregiver.desc">Track daily care tasks like meals, medications, exercises, vital signs, and includes a notes section for improved communication among family members and care team.</p>
-                </a>
+                </div>
             </div>
 
             <div class="services-note">
                 <p data-translation-key="resources.forms.download.note">Download Instructions: Click on the name of any form to download it. You may fill it out and email/fax it to us, or have it ready for the staff during the initial assessment. If you need a form in a different format or have trouble downloading, please contact our office and we can send it to you directly.</p>
+                <p class="coming-soon" data-translation-key="resources.forms.coming.soon">Forms coming soon! Please contact our office for assistance.</p>
             </div>
         </div>
     </section>
@@ -177,7 +255,7 @@
                 <a href="https://www.cms.gov" class="resource-card" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-hand-holding-medical"></i>
                     <h3 data-translation-key="resources.external.cms.title">Centers for Medicare & Medicaid Services</h3>
-                    <p data-translation-key="resources.external.cms.desc">Federal agency administering Medicare, Medicaid, and CHIP, providing detailed coverage guidelines and Medicare Care Compare tools.</p>
+                    <p data-translation-key="resources.external.cms.desc">Federal agency administering Medicare, Medicaid and CHIP, providing detailed coverage guidelines and Medicare Care Compare tools.</p>
                 </a>
 
                 <a href="https://floridahealth.gov" class="resource-card" target="_blank" rel="noopener noreferrer">

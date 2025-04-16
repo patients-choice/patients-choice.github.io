@@ -1156,12 +1156,17 @@ img {
 
 /* Call to Action */
 .cta {
+    position: relative;
     padding: 4rem 0;
     background: linear-gradient(135deg, var(--coral), #FFF5F2);
     color: var(--text-dark);
     text-align: center;
-    position: relative;
     overflow: hidden;
+}
+
+.cta .container {
+    position: relative;
+    z-index: 2;
 }
 
 .cta::before {
@@ -1173,6 +1178,7 @@ img {
     height: 100%;
     background: linear-gradient(135deg, transparent, var(--teal-light));
     transform: skewX(-20deg) translateX(30%);
+    z-index: 1;
 }
 
 .cta::after {
@@ -1185,6 +1191,7 @@ img {
     background: linear-gradient(135deg, var(--teal), var(--teal-light));
     transform: rotate(-12deg);
     opacity: 0.15;
+    z-index: 1;
 }
 
 .cta h2 {
@@ -2147,34 +2154,131 @@ img {
 
 .insurance-note {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .private-pay,
-.insurance-support {
+.insurance-support,
+.resources-link {
     background-color: var(--white);
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: var(--radius);
     box-shadow: var(--shadow-sm);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.private-pay:hover,
+.insurance-support:hover,
+.resources-link:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
 }
 
 .private-pay h3,
-.insurance-support h3 {
+.insurance-support h3,
+.resources-link h3 {
     color: var(--coral);
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
     font-size: 1.35rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.private-pay h3::after,
+.insurance-support h3::after,
+.resources-link h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: var(--coral);
+    opacity: 0.5;
 }
 
 .private-pay p,
-.insurance-support p {
-    margin: 0;
+.insurance-support p,
+.resources-link p {
+    margin: 0 0 1.5rem 0;
     color: var(--text-dark);
     font-size: 1rem;
     line-height: 1.7;
+}
+
+.resources-link .cta-buttons {
+    margin-top: 1rem;
+}
+
+.resources-link .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: var(--coral);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.resources-link .btn:hover {
+    background-color: var(--coral-dark);
+    transform: translateY(-2px);
+}
+
+.resources-link .btn i {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .private-pay,
+    .insurance-support,
+    .resources-link {
+        padding: 1.5rem;
+    }
+    
+    .private-pay h3,
+    .insurance-support h3,
+    .resources-link h3 {
+        font-size: 1.25rem;
+    }
+    
+    .private-pay p,
+    .insurance-support p,
+    .resources-link p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .private-pay,
+    .insurance-support,
+    .resources-link {
+        padding: 1.25rem;
+    }
+    
+    .private-pay h3,
+    .insurance-support h3,
+    .resources-link h3 {
+        font-size: 1.2rem;
+    }
+    
+    .private-pay p,
+    .insurance-support p,
+    .resources-link p {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2205,7 +2309,8 @@ img {
     
     .insurance-card,
     .private-pay,
-    .insurance-support {
+    .insurance-support,
+    .resources-link {
         padding: 2rem 1.5rem;
     }
 }
@@ -2221,7 +2326,8 @@ img {
     
     .insurance-card h3,
     .private-pay h3,
-    .insurance-support h3 {
+    .insurance-support h3,
+    .resources-link h3 {
         font-size: 1.35rem;
     }
     
@@ -2230,7 +2336,8 @@ img {
     }
     
     .private-pay p,
-    .insurance-support p {
+    .insurance-support p,
+    .resources-link p {
         font-size: 1rem;
     }
 }
@@ -2927,4 +3034,202 @@ section h2::after {
     .about-image-grid {
         grid-template-columns: 1fr;
     }
-}  
+}
+
+/* Insurance Section */
+.insurance {
+    padding: 8rem 0;
+    background-color: var(--background);
+    position: relative;
+    overflow: hidden;
+}
+
+.insurance-note {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.insurance-resources-box {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+    padding: 2rem;
+    border-radius: var(--radius);
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
+}
+
+.insurance-resources-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.1));
+    transform: skewX(-20deg) translateX(30%);
+}
+
+.insurance-resources-box i {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+.insurance-resources-box h3 {
+    color: var(--white);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.insurance-resources-box p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.insurance-resources-box .btn {
+    background: var(--white);
+    color: var(--teal-dark);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1.75rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.insurance-resources-box .btn:hover {
+    background: transparent;
+    color: var(--white);
+    border-color: var(--white);
+    transform: translateY(-3px);
+}
+
+.insurance-resources-box .btn i {
+    font-size: 1rem;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+.insurance-resources-box .btn:hover i {
+    transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+    .insurance-note {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .insurance-resources-box {
+        padding: 1.5rem;
+    }
+    
+    .insurance-resources-box h3 {
+        font-size: 1.5rem;
+    }
+    
+    .insurance-resources-box p {
+        font-size: 1rem;
+    }
+}
+
+.medicare-link-container {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.medicare-link {
+    color: var(--teal);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 0.25rem 0;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.medicare-link:hover {
+    color: var(--teal-dark);
+    text-decoration: underline;
+}
+
+.medicare-link:focus {
+    outline: 2px solid var(--teal);
+    outline-offset: 2px;
+}
+
+.medicare-link:active {
+    color: var(--teal-darker);
+}
+
+/* Utility Classes */
+.mt-3 {
+    margin-top: 1.5rem;
+}
+
+.medicare-link-container {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.private-pay i,
+.insurance-support i,
+.resources-link i {
+    font-size: 2.5rem;
+    color: var(--coral);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.private-pay:hover i,
+.insurance-support:hover i,
+.resources-link:hover i {
+    transform: scale(1.1);
+}
+
+/* Add specific styles for the welcome section */
+#welcome.services .services-grid {
+    display: block;  /* Override grid display for this specific section */
+    max-width: 1200px;  /* Match container max-width */
+    margin: 0 auto;
+}
+
+#welcome.services .service-card.full-width {
+    width: 100%;
+    max-width: none;
+    padding: 2.5rem;
+}
+
+#welcome.services .resources-mini-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    #welcome.services .resources-mini-cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+  

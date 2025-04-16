@@ -6,6 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Determine if we're on the resources page
     const isResourcesPage = window.location.pathname.includes('resources.html');
     
+    // Check for language parameter in URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const langParam = urlParams.get('lang');
+    if (langParam === 'es') {
+        // Set language to Spanish if lang=es parameter is present
+        localStorage.setItem('preferredLanguage', 'es');
+    }
+    
     // Embedded header content
     const headerContent = `
 <!-- Header -->
