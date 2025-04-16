@@ -563,7 +563,6 @@ img {
     transition: all 0.3s ease;
     border: 1px solid var(--border);
     position: relative;
-    overflow: hidden;
 }
 
 .service-card::before {
@@ -613,6 +612,7 @@ img {
     margin-top: 1.5rem;
     padding-left: 0;
     text-align: left;
+    position: relative;
 }
 
 .service-details ul {
@@ -2077,7 +2077,6 @@ img {
     transition: all 0.3s ease;
     border: 1px solid var(--border);
     position: relative;
-    overflow: hidden;
 }
 
 .insurance-card::before {
@@ -3146,46 +3145,58 @@ section h2::after {
     }
 }
 
-.medicare-link-container {
+.services-link-container {
     margin-top: 2rem;
     padding-top: 1rem;
     border-top: 1px solid var(--border);
+    position: relative;
+}
+
+.services-link-container p {
+    margin: 0;
 }
 
 .medicare-link {
-    color: var(--teal);
-    font-weight: 600;
+    color: var(--text-dark);
     text-decoration: none;
     transition: all 0.3s ease;
-    padding: 0.25rem 0;
-    position: relative;
     display: inline-block;
-    cursor: pointer;
+    position: relative;
 }
 
 .medicare-link:hover {
-    color: var(--teal-dark);
-    text-decoration: underline;
+    color: var(--teal);
+}
+
+.medicare-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--teal);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.medicare-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 .medicare-link:focus {
-    outline: 2px solid var(--teal);
-    outline-offset: 2px;
+    outline: none;
 }
 
 .medicare-link:active {
-    color: var(--teal-darker);
+    color: var(--teal-dark);
 }
 
 /* Utility Classes */
 .mt-3 {
     margin-top: 1.5rem;
-}
-
-.medicare-link-container {
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--border);
 }
 
 .private-pay i,

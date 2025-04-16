@@ -84,5 +84,19 @@ function initializeHeader() {
             overlay.classList.remove('active');
             document.body.classList.remove('no-scroll');
         });
+        
+        // Add click event listeners to all navigation links
+        const navLinks = nav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Add a slight delay before closing the menu for smoothness
+                setTimeout(() => {
+                    hamburger.classList.remove('active');
+                    nav.classList.remove('active');
+                    overlay.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                }, 300); // 300ms delay for smooth transition
+            });
+        });
     }
 } 
